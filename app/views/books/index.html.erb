@@ -1,0 +1,15 @@
+<h1>Welcome to books index page!</h1>
+
+<div>
+  <% @books.each do |book|%>
+    <ul>
+      <li>
+      <h2><%=link_to("#{book.title}","#") %></h2>
+
+      <h2>Author: <%=book.author%></h2>
+      <h2>Already read? <%=book.already_read.to_s.capitalize%></h2>
+      </li>
+      <br>
+    </ul>
+  <%end%>
+</div>

@@ -1,0 +1,10 @@
+Welcome to books index page!
+
+<% @books.each do |book|%>
+
+Title: <%=book.title%>
+--------------------------------------
+Author: <%=book.author%>
+Already read? <%=book.already_read.to_s.capitalize%>
+
+<%end%>

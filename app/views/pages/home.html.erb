@@ -1,5 +1,5 @@
 <h1>Welcome to Booklist</h1>
 <p><%= link_to "See list of books", books_path %></p>
-<p><%= link_to "Export books as CSV", books_path(format: :csv) %></p>
 <p><%= link_to "Export books as plain text", books_path(format: :text) %></p>
+<p><%= link_to "Export books as CSV (NB: will generate a CSV file, NOT render a page)", books_path(format: :csv) %></p>
 <p><%= link_to "Export books as JSON", books_path(format: :json) %></p>
